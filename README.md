@@ -14,12 +14,6 @@ Formats Kirby HTML output and minifies JavaScript and CSS.
 ## Installation
 
 1. Copy the plugin directory to `site/plugins/kirby-html-pretty/`
-2. Install dependencies:
-
-   ```bash
-   cd site/plugins/kirby-html-pretty
-   composer install
-   ```
 
 ## Configuration
 
