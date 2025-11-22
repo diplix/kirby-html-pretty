@@ -1,6 +1,7 @@
 # Kirby HTML Pretty-Print Plugin
 
 Formats Kirby HTML output and minifies JavaScript and CSS.
+I vibe coded this with cursor, but tested it extensively on <https://wirres.net>.
 
 ## Features
 
