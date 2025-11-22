@@ -1,38 +1,35 @@
 # Kirby HTML Pretty-Print Plugin
 
-Formatiert HTML schön und minifiziert JavaScript/CSS für Kirby CMS.
+Formats Kirby HTML output and minifies JavaScript and CSS.
 
 ## Features
 
-- ✨ Schöne HTML-Formatierung mit Einrückungen
-- 📦 JavaScript-Minifizierung (Einsparungen bis zu 3,5 KB)
-- 🎨 CSS-Minifizierung
-- 💬 Entfernung von HTML-Kommentaren
-- 🚀 Funktioniert für alle Caching-Mechanismen
-- 🔧 Nur im Production-Modus aktiv (nicht bei `debug=true`)
+* HTML formatting with indentation
+* JavaScript minification
+* CSS minification
+* Removal of HTML comments
+* Compatible with most Kirby caching mechanisms
+* Disabled in debug mode
 
 ## Installation
 
-1. Kopiere das Plugin-Verzeichnis nach `site/plugins/kirby-html-pretty/`
-2. Installiere die Dependencies:
+1. Copy the plugin directory to `site/plugins/kirby-html-pretty/`
+2. Install dependencies:
+
    ```bash
    cd site/plugins/kirby-html-pretty
    composer install
    ```
 
-Das Plugin ist selbstständig und enthält alle benötigten Dependencies.
+## Configuration
 
-## Konfiguration
+There is currently no `config.php` configuration yet (TODO).
+All options are located in `src/helpers.php`.
 
-Das Plugin ist sofort aktiv und benötigt keine Konfiguration. Es greift automatisch über den `page.render:after` Hook ein, bevor das HTML gecacht wird.
+The plugin uses the `page.render:after` hook.
 
-## Deaktivierung
+## Technical Details
 
-Um das Plugin zu deaktivieren, entferne einfach das Plugin-Verzeichnis oder setze `debug => true` in der `config.php`.
-
-## Technische Details
-
-- Verwendet `wa72/html-pretty-min` für die Formatierung
-- Hook: `page.render:after` (greift nach allen anderen Plugins)
-- Nur aktiv wenn `option('debug') !== true`
-
+* Uses `wa72/html-pretty-min` for formatting
+* Hook: `page.render:after` (runs after all other plugins)
+* Only active when `option('debug') !== true`
