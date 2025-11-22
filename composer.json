@@ -1,0 +1,27 @@
+{
+  "name": "diplix/html-pretty",
+  "description": "HTML Pretty-Print und Minifizierung für Kirby CMS",
+  "version": "1.0.0",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "time": "2025-11-21",
+  "authors": [
+      {
+          "name": "Felix Schwenzel",
+          "homepage": "https://wirres.net"
+      }
+  ],
+"require": {
+    "php": ">=8.1",
+    "getkirby/composer-installer": "^1.2",
+    "wa72/html-pretty-min": "^0.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "autoload": {
+    "files": ["src/helpers.php"]
+  }
+}
