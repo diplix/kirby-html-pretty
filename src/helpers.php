@@ -8,6 +8,7 @@
  * @param string $html Das zu formatierende HTML
  * @return string Formatiertes HTML
  */
+if (!function_exists('prettyHtml')) {
 function prettyHtml(string $html): string
 {
     // Leere oder sehr kurze Strings direkt zurückgeben
@@ -80,5 +81,6 @@ function prettyHtml(string $html): string
         // Bei Fehlern Original zurückgeben
         return $html;
     }
+}
 }
 
