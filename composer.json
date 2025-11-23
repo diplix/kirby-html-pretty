@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "type": "kirby-plugin",
   "license": "MIT",
+  "homepage": "https://github.com/diplix/kirby-html-pretty",
   "time": "2025-11-21",
   "authors": [
       {
@@ -11,7 +12,21 @@
           "homepage": "https://wirres.net"
       }
   ],
-"require": {
+  "keywords": [
+    "kirby",
+    "kirby-plugin",
+    "html",
+    "pretty-print",
+    "minify",
+    "formatting",
+    "css",
+    "javascript"
+  ],
+  "support": {
+    "source": "https://github.com/diplix/kirby-html-pretty",
+    "issues": "https://github.com/diplix/kirby-html-pretty/issues"
+  },
+  "require": {
     "php": ">=8.1",
     "getkirby/composer-installer": "^1.2",
     "wa72/html-pretty-min": "^0.3"
