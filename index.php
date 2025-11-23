@@ -8,7 +8,7 @@
  * @package   Kirby HTML Pretty
  * @author    Felix Schwenzel
  * @link      https://wirres.net
- * @version   1.0.0
+ * @version   1.0.1
  */
 
 // Composer Autoloader für Plugin-Dependencies laden
