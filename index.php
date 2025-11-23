@@ -8,7 +8,7 @@
  * @package   Kirby HTML Pretty
  * @author    Felix Schwenzel
  * @link      https://wirres.net
- * @version   1.0.3
+ * @version   1.0.4
  */
 
 // Composer Autoloader für Plugin-Dependencies laden
@@ -18,7 +18,7 @@ Kirby::plugin('diplix/html-pretty', [
     'info' => [
         'name' => 'HTML Pretty',
         'description' => 'Formats Kirby HTML output and minifies JavaScript and CSS.',
-        'version' => '1.0.3',
+        'version' => '1.0.4',
         'author' => 'Felix Schwenzel',
         'link' => 'https://github.com/diplix/kirby-html-pretty',
         'license' => 'MIT'

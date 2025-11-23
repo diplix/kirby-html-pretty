@@ -1,7 +1,7 @@
 {
   "name": "diplix/html-pretty",
   "description": "HTML Pretty-Print und Minifizierung für Kirby CMS",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "kirby-plugin",
   "license": "MIT",
   "homepage": "https://github.com/diplix/kirby-html-pretty",
