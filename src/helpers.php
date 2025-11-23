@@ -31,9 +31,11 @@ function prettyHtml(string $html): string
         }
         
         // Library verwenden für Pretty-Print
-        $minifyJs = true;   // JavaScript minifizieren
-        $minifyCss = true;  // CSS minifizieren
-        $removeComments = true; // Kommentare entfernen
+        // Optionen aus Kirby config.php lesen (mit Defaults)
+        $minifyJs = option('diplix.html-pretty.minifyJs', true);
+        $minifyCss = option('diplix.html-pretty.minifyCss', true);
+        $removeComments = option('diplix.html-pretty.removeComments', true);
+        $indentCharacters = option('diplix.html-pretty.indentCharacters', '    ');
         
         $formatter = new \Wa72\HtmlPrettymin\PrettyMin([
             'minify_js' => $minifyJs,
@@ -47,7 +49,7 @@ function prettyHtml(string $html): string
                 'button', 'input', 'label', 'select', 'textarea', 's', 'ruby', 'rt', 'rp',
                 'time', 'del', 'ins', 'mark', 'u', 'data', 'bdi'
             ],
-            'indent_characters' => "    "   // 4 Leerzeichen für Einrückung
+            'indent_characters' => $indentCharacters
         ]);
         
         // HTML laden, formatieren und zurückgeben

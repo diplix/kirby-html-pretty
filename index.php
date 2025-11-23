@@ -15,6 +15,20 @@
 @include_once __DIR__ . '/vendor/autoload.php';
 
 Kirby::plugin('diplix/html-pretty', [
+    'info' => [
+        'name' => 'HTML Pretty',
+        'description' => 'Formats Kirby HTML output and minifies JavaScript and CSS.',
+        'version' => '1.0.3',
+        'author' => 'Felix Schwenzel',
+        'link' => 'https://github.com/diplix/kirby-html-pretty',
+        'license' => 'MIT'
+    ],
+    'options' => [
+        'minifyJs' => true,
+        'minifyCss' => true,
+        'removeComments' => true,
+        'indentCharacters' => '    '  // 4 Leerzeichen
+    ],
     'hooks' => [
         'page.render:after' => function ($contentType, $data, $page, $html) {
             // HTML Pretty-Print vor dem Caching (wird vom Static-Cache-Plugin verwendet)
