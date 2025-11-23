@@ -12,12 +12,7 @@
  */
 
 // Composer Autoloader für Plugin-Dependencies laden
-if (file_exists(__DIR__ . '/vendor/autoload.php')) {
-    require_once __DIR__ . '/vendor/autoload.php';
-}
-
-// Helper-Funktion laden
-require_once __DIR__ . '/src/helpers.php';
+@include_once __DIR__ . '/vendor/autoload.php';
 
 Kirby::plugin('diplix/html-pretty', [
     'hooks' => [
